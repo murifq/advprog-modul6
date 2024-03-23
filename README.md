@@ -1,1 +1,3 @@
-# advprog-modul6
+**What is inside the handle_connection method?**
+
+It takes ownership of a TcpStream, stream, representing a connection to a client. It creates a BufReader wrapping the TcpStream. This buffered reader allows reading lines from the stream efficiently. It reads lines from the buffered reader (buf_reader.lines()). Each line corresponds to a part of the HTTP request until empty line. It collects the lines into a Vec<String> called http_request. Finally, it prints out the collected HTTP request for debugging purposes.
