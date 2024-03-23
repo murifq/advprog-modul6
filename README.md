@@ -15,3 +15,6 @@ Now my updated handle_connection, can give the different repsonse for different 
 
 ## Commit 4 notes
 On my updated code, right now when i access "/sleep", there will be several time to wait to get the response. Also, when i access "/sleep" and open on another window with path "/", it also take several time. The path "/" will wait the first access "/sleep" to be completed, then the "/" will get the response.
+
+## Commit 5 notes
+Threadpool is a collection of a threads are created and managed together to excuting task concurently. When a task needs to be executed, it's assigned to one of the threads in the pool, which then processes it. Thread pools are commonly used in multi-threaded programming to improve performance and resource management. With limiting the number of threads in threadpool, we can reduce the impact of a DoS attack.  
