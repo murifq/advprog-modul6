@@ -6,5 +6,5 @@ It takes ownership of a TcpStream, stream, representing a connection to a client
 
 ## Commit 2 notes
 **What is inside the handle_connection method?**
-
+![img.png](assets/images/commit2.png)
 There are some addtional line in the new handle_connection method. Defines the status line of the HTTP response indicating success. Then gets the length of the contents read from the file. Formats the HTTP response string using the status line, content length, and the contents read from the file. Then send the HTTP response back to the client.
