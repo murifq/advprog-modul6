@@ -12,3 +12,6 @@ There are some addtional line in the new handle_connection method. Defines the s
 ## Commit 3 notes
 ![img.png](assets/images/commit3.png)
 Now my updated handle_connection, can give the different repsonse for different path. Also i do some refactoring. Use an if-else statement to give an appropriate html and status code response.
+
+## Commit 4 notes
+On my updated code, right now when i access "/sleep", there will be several time to wait to get the response. Also, when i access "/sleep" and open on another window with path "/", it also take several time. The path "/" will wait the first access "/sleep" to be completed, then the "/" will get the response.
